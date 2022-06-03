@@ -11,4 +11,31 @@ body {
     width: 25%;
 }
 
-.row {}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    justify-content: center;
+}
+
+img {
+    flex-basis: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+    margin-top: 8px;
+}
+
+
+@media only screen and (max-width: 800px) {
+    img {
+        flex-basis: 40%;
+        max-width: 40%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    img {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
